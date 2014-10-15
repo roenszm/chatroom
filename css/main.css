@@ -1,3 +1,61 @@
 @CHARSET "UTF-8";
 
+body {
+	background: #ddd;
+}
+
+div#chatroom {
+	width: 600px;
+	height: 500px;
+	background: #bbb;
+	margin: 2% auto;
+	position: relative;
+	padding: 5px;
+}
+
+div#showmessage {
+	width: 450px;
+	height: 350px;
+	background: #f7f7f7;
+
+}
+
+div#sendbox {
+	width: 600px;
+	height: 145px;
+	margin-top: 5px;
+	position: relative;
+}
+
+div#sendbox div#sendmessage {
+	width: 600px;
+	height: 100px;
+	background: #fff;
+	
+}
+
+div#sendbox div#sendmessage textarea {
+	width: 600px;
+	height: 90px;
+}
+
+
+div#sendbox div#sendbutton {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 120px;
+	height: 35px;
+	background: #999999;
+	
+}
+
+div#sidebox {
+	width: 145px;
+	height: 350px;
+	background: #aaaaaa;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
 

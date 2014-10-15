@@ -12,9 +12,32 @@
 	</head>
 	
 	<body>
-		<h1>Hi World!</h1>
-	
-	
+		
+		<div id="chatroom">
+			
+			<div id="showmessage">
+			
+			</div>
+			
+			<div id="sendbox">
+				<div id="sendmessage">
+					<textarea>
+					
+					</textarea>
+				
+				</div>
+				<div id="sendbutton">
+				
+				</div>
+			
+			</div>
+		
+			<div id="sidebox">
+			
+			</div>
+		
+		
+		</div>
 	
 	</body>
 
