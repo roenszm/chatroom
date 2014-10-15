@@ -7,12 +7,12 @@
 		<title>Chatroom</title>
 
 		<script src="<?= base_url()?>js/jquery1.9.1.min.js"></script>
-		<link href="<?= base_url()?>css/main.css" type="text/css">
+		<link href="<?= base_url()?>css/main.css" rel="stylesheet" type="text/css" />
 		
 	</head>
 	
 	<body>
-		
+		<h1>Hi World!</h1>
 	
 	
 	
