@@ -4,9 +4,10 @@
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Chatroom</title>
+		<title>ChatRoom</title>
 
 		<script src="<?= base_url()?>js/jquery1.9.1.min.js"></script>
+		<script src="<?= base_url()?>js/main.js"></script>
 		<link href="<?= base_url()?>css/main.css" rel="stylesheet" type="text/css" />
 		
 	</head>
@@ -15,21 +16,19 @@
 		
 		<div id="chatroom">
 			
-			<div id="showmessage">
+			<input id="mid" type="text" value=<?= $mid; ?> />
 			
+			<div id="showmessage">
+				
 			</div>
 			
 			<div id="sendbox">
-				<div id="sendmessage">
-					<textarea>
-					
-					</textarea>
 				
-				</div>
-				<div id="sendbutton">
+				<textarea id="sendmessage" placeholder= "Input message..."; ></textarea>
 				
-				</div>
+				<input id="sendbutton" type="button" value="Send"/>
 			
+				<label>Set Name</label><input id="name" type="text" />
 			</div>
 		
 			<div id="sidebox">
