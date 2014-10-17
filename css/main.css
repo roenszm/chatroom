@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 
 * {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -26,21 +27,29 @@ div#showmessage {
 	height: 340px;
 	padding: 5px;
 	background: #f7f7f7;
-	overflow-x: hidden;
 	overflow-y: auto;
+	overflow-x: auto;
 }
-div#showmessage textarea#message {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	line-height: 20px;
-	overflow-x: hidden;
-	overflow-y: auto;
-	padding: 5px;
-	border: none;
-	width: 440px;
-	height: 340px;
-	background: #f7f7f7;
-	resize: none;
+
+div#showmessage div.item {
+	width: 100%;
+	margin-bottom: 10px; 
+}
+div#showmessage div.item span.name {
+	float: left;
+	font-size: 13px;
+	color: #777;
+	margin-right: 10px;
+}
+
+div#showmessage div.item span.sendtime {
+	font-size: 13px;
+	color: #aaa;
+}
+div#showmessage div.item div.content {
+	margin-top: 3px;
+	font-size: 16px;
+	color: #000;
 }
 
 div#sendbox {
@@ -51,8 +60,7 @@ div#sendbox {
 }
 
 div#sendbox textarea#sendmessage {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 20px;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -66,7 +74,6 @@ div#sendbox textarea#sendmessage {
 }
 
 div#sendbox input#sendbutton {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	fon-weight: bold;
 	color: #e7e7e7;
@@ -79,14 +86,13 @@ div#sendbox input#sendbutton {
 	
 }
 
-div#sendbox label {
+div#sendbox label.setname {
 	position: absolute;
 	left: 160px;
 	bottom: 0px;
 	height: 35px;
 	width: 60px;
 	line-height: 35px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	fon-weight: bold;
 	color: #656565;
@@ -98,10 +104,20 @@ div#sendbox input#name {
 	bottom: 5px;
 	height: 20px;
 	line-height: 20px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	fon-weight: bold;
 	color: #111;
+}
+
+div#sendbox label.notice {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 200px;
+	line-height: 15px;
+	font-size: 12px;
+	color: #ee1111;
+	display: none;
 }
 
 div#sidebox {

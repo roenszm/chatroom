@@ -17,8 +17,8 @@ class Main extends CI_Controller{
 		$this->load->model('message_model','msg');
 		
 		$message = $this->msg->load(0);
-		$data['mid'] = $message['id'];
 		
+		$data['mid'] = $message['id'];
 		$this->load->view('chatroom',$data);
 		
 	}
@@ -35,16 +35,18 @@ class Main extends CI_Controller{
 	public function load()
 	{
 		
+		$this->load->helper('cookie');
+		
 		$this->load->model('message_model','msg');
+
+		$mid = $this->input->post('mid');
 		
-		$message = $this->msg->load($this->input->post('mid'));
 		
-		while(count($message)==0){
-			usleep(100000);
-			$message = $this->msg->load($this->input->post('mid'));
-		}
+		$message = $this->msg->load($mid);
 		
-		echo json_encode($message);
+		
+		if (count($message) == 0) echo '';
+		else echo json_encode($message);
 		
 	}
 	

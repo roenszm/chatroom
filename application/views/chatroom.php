@@ -28,7 +28,9 @@
 				
 				<input id="sendbutton" type="button" value="Send"/>
 			
-				<label>Set Name</label><input id="name" type="text" />
+				<label class="setname">Set Name</label><input id="name" type="text" />
+				
+				<label class="notice">Message and name should not be empty!</label>
 			</div>
 		
 			<div id="sidebox">
