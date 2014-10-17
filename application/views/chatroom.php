@@ -34,7 +34,7 @@
 			</div>
 		
 			<div id="sidebox">
-			
+				ChatRoom
 			</div>
 		
 		
